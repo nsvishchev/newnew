@@ -3,7 +3,7 @@ using System.Data;
 
 namespace aidasd
 {
-    class Order
+    class Order///git
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -12,7 +12,7 @@ namespace aidasd
     {
         static void Main(string[] args)
         {
-            Order Caesar = new Order { Id = 0, Name = "Цезарь-пицца"};
+            Order Caesar = new Order { Id = 0, Name = "Цезарь-пицца" };
             Order Mega = new Order { Id = 1, Name = "Мега-пицца" };
             Order Burger = new Order { Id = 2, Name = "Бургер-пицца" };
 
@@ -26,7 +26,7 @@ namespace aidasd
             Console.WriteLine("В очередь обавлен объект ''Бургер''  ");
             Console.WriteLine();
 
-            foreach(var item in OrderQueue)
+            foreach (var item in OrderQueue)
             {
                 Console.WriteLine($"Идентификатор: {item.Id} | Объкет: {item.Name}");
             }
@@ -44,5 +44,9 @@ namespace aidasd
 
             Console.WriteLine(OrderQueue.Peek());
         }
+    }
+    class Test
+    {
+
     }
 }
